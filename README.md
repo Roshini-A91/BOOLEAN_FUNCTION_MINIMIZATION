@@ -67,6 +67,7 @@ endmodule
 
 
 ![image](https://github.com/user-attachments/assets/a1083994-b94d-4043-a854-00f6d3e611ac)
+![Screenshot 2024-12-27 181751](https://github.com/user-attachments/assets/da18b7ef-e774-4b65-a3bc-04eec3de99f4)
 
 
 **Truth table**
@@ -84,6 +85,7 @@ endmodule
 
 
 ![313054423-bce7ad1d-dd00-451f-b1b0-8797ea332973](https://github.com/user-attachments/assets/94d330d2-ce42-4172-9f18-984c6d28693a)
+![Screenshot 2024-12-27 181834](https://github.com/user-attachments/assets/e0d506fe-14dc-4919-a603-52c397523ef7)
 
 
 
