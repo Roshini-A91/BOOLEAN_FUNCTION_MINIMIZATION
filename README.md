@@ -16,7 +16,17 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
-**Logic Diagram**
+**Truthtable**
+
+i)F1 TRUTHTABLE:
+
+
+![Screenshot 2024-12-16 081905](https://github.com/user-attachments/assets/7f7f03cf-a4e8-4fa1-b577-3d54e3f5ce66)
+
+ii)F2 TRUTHTABLE:
+
+
+![Screenshot 2024-12-16 081944](https://github.com/user-attachments/assets/cb697db9-b680-4361-aeea-0f66a051265b)
 
 **Procedure**
 
@@ -33,60 +43,44 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by:ROSHINI A  RegisterNumber:24002364
+Developed by: Roshini.A
 
-module exp22(A,B,C,D,F1);
+RegisterNumber:24002364
+*/
 
-input A,B,C,D;
-
-output F1;
-
-wire x1,x2,x3,x4,x5;
-
-assign x1=(~A)&(~B)&(~C)&(~D);
-
-assign x2=(A)&(~C)&(~D);
-
-assign x3=(~B)&(C)&(~D);
-
-assign x4=(~A)&(B)&(C)&(D);
-
-assign x5=(B)&(~C)&(D);
-
-assign F1=x1|x2|x3|x4|x5;
-
+```
+i)
+module funct1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
 
+ii)
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));0
+endmodule
+```
 
-**RTL realization**
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/a1083994-b94d-4043-a854-00f6d3e611ac)
-![Screenshot 2024-12-27 181751](https://github.com/user-attachments/assets/da18b7ef-e774-4b65-a3bc-04eec3de99f4)
-
-
-**Truth table**
+**RTL**
 
 
+![Screenshot 2024-12-16 082201](https://github.com/user-attachments/assets/32891e57-61f9-4bc2-b385-613f9592aae6)
 
 
-![313054208-ee2fd841-7a98-4ded-9637-76f31327d8b3](https://github.com/user-attachments/assets/5bd6ae88-7ee3-4a24-9e86-f9559cccd124)
+![Screenshot 2024-12-16 082208](https://github.com/user-attachments/assets/6489de61-47ac-481f-b1ce-9a79aa0d5ad1)
+
+**Output:**
 
 
-**Waveform**
+![Screenshot 2024-12-16 082250](https://github.com/user-attachments/assets/00323f93-b83a-4b18-99c4-8c4a410f0ea3)
 
 
-
-
-
-![313054423-bce7ad1d-dd00-451f-b1b0-8797ea332973](https://github.com/user-attachments/assets/94d330d2-ce42-4172-9f18-984c6d28693a)
-![Screenshot 2024-12-27 181834](https://github.com/user-attachments/assets/e0d506fe-14dc-4919-a603-52c397523ef7)
-
+![Screenshot 2024-12-16 082229](https://github.com/user-attachments/assets/cd30630f-14f4-4044-856f-920c65a021df)
 
 
 **Result:**
